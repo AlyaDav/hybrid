@@ -1,6 +1,6 @@
 import * as angular from "angular";
 
-export const module = angular.module('AngularJSApp', ['ui.router']);
+export const module = angular.module('AngularJS', ['ui.router']);
 
 module.config(($locationProvider, $stateProvider) => {
     // use history api instead of URL fragment
