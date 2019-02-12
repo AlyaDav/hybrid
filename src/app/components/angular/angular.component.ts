@@ -11,12 +11,8 @@ export class AngularComponent implements OnInit {
   constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
-    
     this.activatedRoute.queryParams.subscribe(params => {
-      const paramsJs = params['paramsJs'];
-     this.modelAngular=paramsJs;
-      console.log(params);
-      console.log(this.modelAngular,'modelAngular');
+      this.modelAngular = params['paramsJs'];
     });
   }
 

@@ -3,8 +3,7 @@ import * as angular from "angular";
 export const module = angular.module('AngularJS', ['ui.router']);
 
 module.config(($locationProvider, $stateProvider) => {
-    // use history api instead of URL fragment
-    $locationProvider.html5Mode(true);//изменять маршрутизацию и URL-адреса наших страниц без обновления страницы.
+    $locationProvider.html5Mode(true);
 
     $stateProvider.state('angularjs_a', {
         url: '/angularjs_a',
@@ -12,21 +11,20 @@ module.config(($locationProvider, $stateProvider) => {
         controller: 'AngularJSCTRL'
     });
 
-    $stateProvider.state('sink', { //регистрация состояния
+    $stateProvider.state('sink', {
         url: '/*path',
         template: ''
 
     });
-    $stateProvider.state('angular_a', { //регистрация состояния
+    $stateProvider.state('angular_a', {
         url: '/angular_a',
         template: ''
     });
 })
-
     .controller('AngularJSCTRL', function ($location, $scope) {
 
-        if ($location.search().hasOwnProperty('paramsAngular')) { //получаем параметры quevery param angular 
-            var myvalue = $location.search()['paramsAngular']; // == param
+        if ($location.search().hasOwnProperty('paramsAngular')) {
+            var myvalue = $location.search()['paramsAngular'];
             $scope.modelJS = myvalue;
         }
 
