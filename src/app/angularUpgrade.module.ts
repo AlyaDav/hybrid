@@ -5,7 +5,7 @@ import { module } from './angularjsapp';
 import { UpgradeModule } from '@angular/upgrade/static';
 import { setUpLocationSync } from '@angular/router/upgrade';
 
-@Component({ template: `page net` })
+@Component({ template: `` })
 export class EmptyComponent { }
 
 @NgModule({

@@ -1,7 +1,7 @@
 <h1>Angular!!!</h1>
 <mat-form-field class="example-full-width">
-  <input [(ngModel)]="modelAngular" name="modelAngular" matInput>
+  <input [(ngModel)]="modelAngular" matInput>
 </mat-form-field>
 <p>
-  <a [queryParams]="{ paramsAngular: modelAngular}" routerLink="/angularjs_a">Go to AngularJS</a>
+  <a [queryParams]="{paramsAngular: modelAngular}" routerLink="/angularjs_a">Go to AngularJS</a>
 </p>
