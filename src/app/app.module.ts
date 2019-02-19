@@ -19,9 +19,9 @@ import { MatInputModule } from '@angular/material/input';
     FormsModule,
     BrowserModule,
     RouterModule.forRoot([
-      { path: '', redirectTo: 'angular_a', pathMatch: 'full' },
-      { path: 'angular_a', component: AngularComponent },
-      { path: 'angularjs_a', loadChildren: './angularUpgrade.module#AngularJSModule' },
+      { path: '', redirectTo: 'angular', pathMatch: 'full' },
+      { path: 'angular', component: AngularComponent },
+      { path: 'angularjs', loadChildren: './angularUpgrade.module#AngularJSModule' },
       { path: '404', component: PageNotFoundComponent },
       { path: '**', redirectTo: '404' }
     ],

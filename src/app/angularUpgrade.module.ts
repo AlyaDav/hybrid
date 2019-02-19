@@ -15,7 +15,7 @@ export class EmptyComponent { }
   imports: [
     UpgradeModule,
     RouterModule.forChild([
-      { path: 'angularjs_a', component: EmptyComponent }
+      { path: 'angularjs', component: EmptyComponent }
     ])
   ]
 })

@@ -7,14 +7,14 @@ module.config(($locationProvider, $stateProvider) => {
 
     $locationProvider.html5Mode(true);
 
-    $stateProvider.state('angularjs_a', {
-        url: '/angularjs_a',
+    $stateProvider.state('angularjs', {
+        url: '/angularjs',
         templateUrl: './components/angularJs/angularJs.html',
         controller: 'AngularJSCTRL'
     });
     
-    $stateProvider.state('angular_a', {
-        url: '/angular_a',
+    $stateProvider.state('angular', {
+        url: '/angular',
         template: ''
     });
 })
@@ -26,9 +26,9 @@ module.config(($locationProvider, $stateProvider) => {
         }
         $scope.change = function () {
             if ($scope.modelJS)
-                $location.url('angular_a' + '?paramsJs=' + $scope.modelJS);
+                $location.url('angular' + '?paramsJs=' + $scope.modelJS);
             else {
-                $location.url('angular_a');
+                $location.url('angular');
             }
         };
     });
